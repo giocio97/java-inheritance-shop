@@ -46,10 +46,10 @@ public class Prodotto {
 		return codice;
 	}
 
-	public Prodotto(String nome, String marca, float prezzo) {
+	public Prodotto(String nome, int codice, String marca, float prezzo) {
 		super();
 		Random r = new Random();
-		codice = r.nextInt(999999);
+		this.codice = r.nextInt(999999);
 		this.nome = nome;
 		this.marca = marca;
 		this.prezzo = prezzo;
@@ -57,9 +57,9 @@ public class Prodotto {
 
 	}
 
-	float prezzoConIva() {
+	public void prezzoConIva() {
 		float prezzoConIva = ((prezzo * iva) / 100) + prezzo;
-		return prezzoConIva;
+		return;
 	}
 
 }
