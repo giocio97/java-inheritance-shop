@@ -58,7 +58,7 @@ public class Prodotto {
 	}
 
 	public void prezzoConIva() {
-		float prezzoConIva = ((prezzo * iva) / 100) + prezzo;
+		float prezzoConIva = ((prezzo * iva) / 100F) + prezzo;
 		return;
 	}
 

@@ -9,6 +9,15 @@ public class Televisore extends Prodotto {
 		super(nome, codice, marca, prezzo);
 		this.pollici = pollici;
 		this.smart = smart;
+
+	}
+
+	public int getPollici() {
+		return pollici;
+	}
+
+	public boolean isSmart() {
+		return smart;
 	}
 
 }
