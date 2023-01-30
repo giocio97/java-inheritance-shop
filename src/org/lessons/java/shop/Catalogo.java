@@ -6,11 +6,24 @@ public class Catalogo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String prodotto1, prodotto2, prodotto3;
+		String sceltaUser;
+
+		int n = 3;
+		Prodotto[] catalogoProdotti = new Prodotto[n];
+
+		for (int i = 1; i < n; i++) {
+			catalogoProdotti[i].toString();
+		}
+
 		Scanner s = new Scanner(System.in);
 
 		System.out.print("inserisci prodotto (Smartphone, Televisore o Cuffie): ");
-		prodotto1 = s.nextLine();
+		prodotto = s.nextLine();
+
+		if (prodotto.equals("Smartphone"))
+
+			System.out.print("inserisci il nome dello smartphone: ");
+		nome = s.nextLine();
 
 		s.close();
 
